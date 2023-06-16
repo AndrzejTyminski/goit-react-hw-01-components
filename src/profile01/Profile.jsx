@@ -3,7 +3,7 @@ import "./Profile.css"
 export const Profile = ()  =>
 {return(
     
-   <div >
+   <>
         <div className='profileCenter'>
             <div className='profile'>
                 <img className='profile-avatar'src={user.avatar} alt="User avatar"></img>
@@ -29,6 +29,6 @@ export const Profile = ()  =>
             </div>
         </div>
 
-   </div> 
+   </> 
 
 )}
