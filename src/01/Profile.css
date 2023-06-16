@@ -5,6 +5,8 @@
   flex-direction: column;
   width: 600px;
   background-color: #ffe;
+  margin: 90px 0;
+  padding-top: 45px;
 
   border: 1px solid #ccc;
 }
