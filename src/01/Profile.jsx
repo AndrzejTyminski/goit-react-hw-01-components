@@ -1,9 +1,10 @@
 import user from './user.json';
+import "./Profile.css"
 export const Profile = ()  =>
 {return(
     
    <div>
-        <div>
+        <div className='profile'>
             <img src={user.avatar} alt="User avatar"></img>
             
                 <p>{user.username}</p>
@@ -27,5 +28,5 @@ export const Profile = ()  =>
         </ul>
 
    </div> 
-    
+
 )}
