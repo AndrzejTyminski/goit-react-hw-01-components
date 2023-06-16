@@ -3,29 +3,31 @@ import "./Profile.css"
 export const Profile = ()  =>
 {return(
     
-   <div>
-        <div className='profile'>
-            <img src={user.avatar} alt="User avatar"></img>
+   <div >
+        <div className='profileCenter'>
+            <div className='profile'>
+                <img className='profile-avatar'src={user.avatar} alt="User avatar"></img>
+                
+                    <p className='profile-name'>{user.username}</p>
+                    <p className='profile-text'>@{user.tag}</p>
+                    <p className='profile-text profile-margin-bottom'>{user.location}</p>
             
-                <p>{user.username}</p>
-                <p>{user.tag}</p>
-                <p>{user.location}</p>
-            
+                <ul>
+                    <li>
+                        <span className='profile-span-first'>Followers</span>
+                        <span className='profile-span-second'>{user.stats.followers}</span>
+                    </li>
+                    <li>
+                        <span className='profile-span-first'>Views</span>
+                        <span className='profile-span-second'>{user.stats.views}</span>
+                    </li>
+                    <li>
+                        <span className='profile-span-first'>Likes</span>
+                        <span className='profile-span-second'>{user.stats.likes}</span>
+                    </li>
+                </ul> 
+            </div>
         </div>
-        <ul>
-            <li>
-                <span>Followers</span>
-                <span>{user.stats.followers}</span>
-            </li>
-            <li>
-                <span>Views</span>
-                <span>{user.stats.views}</span>
-            </li>
-            <li>
-                <span>Likes</span>
-                <span>{user.stats.likes}</span>
-            </li>
-        </ul>
 
    </div> 
 
