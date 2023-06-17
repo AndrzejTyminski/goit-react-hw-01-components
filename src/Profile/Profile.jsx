@@ -12,16 +12,16 @@ export const Profile = ()  =>
                     <p className='profile-text'>@{user.tag}</p>
                     <p className='profile-text profile-margin-bottom'>{user.location}</p>
             
-                <ul>
-                    <li>
+                <ul className='profile-ul'>
+                    <li className='profile-li'>
                         <span className='profile-span-first'>Followers</span>
                         <span className='profile-span-second'>{user.stats.followers}</span>
                     </li>
-                    <li>
+                    <li className='profile-li'>
                         <span className='profile-span-first'>Views</span>
                         <span className='profile-span-second'>{user.stats.views}</span>
                     </li>
-                    <li>
+                    <li className='profile-li'>
                         <span className='profile-span-first'>Likes</span>
                         <span className='profile-span-second'>{user.stats.likes}</span>
                     </li>

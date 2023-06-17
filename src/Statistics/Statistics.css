@@ -1,3 +1,32 @@
-li {
+.statistic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 330px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  list-style: none;
   color: rgb(8, 115, 127);
+  border: 1px solid #ccc;
+  padding: 0;
+}
+
+.statistic-li {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  height: 30px;
+}
+
+.statistic-ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.statistic-wrapper {
+  padding: 10px 0;
 }
