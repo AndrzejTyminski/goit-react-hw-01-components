@@ -1,10 +1,15 @@
 import './Statistics.css'
-// import stats from './data.json';
+import stats from './data.json';
 export const Statistics = () => 
 {
-    return(
-        <>
-        <h3>LLLorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, magni fugiat quaerat incidunt blanditiis laboriosam facere iure officiis, sunt sit voluptatum quos itaque molestiae? Minus aperiam incidunt inventore odit ullam!</h3>
-        </>
+    const info = stats.map(({id, label, percentage,}) => <>{id}, {label} {percentage}</>);
+      return(
+     <>
+     <li>{info[0]}</li>
+     <li>{info[1]}</li>
+     </>  
     )
+
 }
+
+console.log(stats)
