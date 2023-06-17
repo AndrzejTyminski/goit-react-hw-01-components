@@ -1,13 +1,16 @@
 import './Statistics.css'
 import stats from './data.json';
+
+
 export const Statistics = () => 
 {
-    const info = stats.map(({id, label, percentage,}) => <>{id}, {label} {percentage}</>);
+    const info = stats.map(({id, label, percentage}) => ( id={id}, label={label}));
       return(
-     <>
-     <li>{info[0]}</li>
-     <li>{info[1]}</li>
-     </>  
+     <>  
+      <li></li>
+      </>
+   
+  
     )
 
 }
