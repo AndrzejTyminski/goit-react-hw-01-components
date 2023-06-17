@@ -5,19 +5,22 @@ export const FriendListItem = () =>
 {
     return(
         <>
-        <ul>
+        <ul style={{listStyle: 'none'}}>
             { 
             friendlist.map(friend => (
-            <li key={friend.id}>
-            <span>{friend.isOnline}</span>
+            <li className='friend' key={friend.id}>
+            <span className='friend-led' style={{backgroundColor: 'red'}}>{friend.isOnline}</span>
             <img src={friend.avatar} style={{width: 48}} alt="User avatar"></img>
-            <p>{friend.name}</p>
+            <p className='friend-avatar'>{friend.name}</p>
             </li>))
+
+
         }
+
         </ul>
+  
         </>
     )
 }
 
 
-console.log(friendlist)
