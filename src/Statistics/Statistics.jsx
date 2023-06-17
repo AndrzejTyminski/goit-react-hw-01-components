@@ -2,7 +2,7 @@ import './Statistics.css'
 import stats from './data.json';
 export const Statistics = () => 
 {
-    const info = (stats);
+    
       return(
     <>  
     <div className='statistic'>
