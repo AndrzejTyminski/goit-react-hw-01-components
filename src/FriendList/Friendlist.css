@@ -7,6 +7,10 @@
   border: 1px solid #ccc;
   box-shadow: inset 2px 4px 10px -1px rgba(66, 68, 90, 1);
 }
+
+.friend:hover {
+  box-shadow: 2px 4px 10px -1px rgba(66, 68, 90, 1);
+}
 .friend-led {
   border: 1px solid #040404;
   width: 10px;
