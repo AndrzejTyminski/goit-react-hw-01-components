@@ -1,6 +1,5 @@
-import th from './transactions.json'
 import './Th.css'
-export const TransactionHistory = (  ) => 
+const TransactionHistory = ({ items }) => 
 {
     return (
         <>
@@ -13,17 +12,16 @@ export const TransactionHistory = (  ) =>
                 </tr>
                 </thead>
                 <tbody >
-            {th.map(({ id, type, amount, currency }) => ( 
-        <>
-        <tr key={id}>
-            <td className='td-type'>{type}</td>
-            <td className='td-type'>{amount}</td>
-            <td className='td-type'>{currency}</td>
+            {items.map(item => ( 
+        <tr key={item.id}>
+            <td className='td-type'>{item.type}</td>
+            <td className='td-type'>{item.amount}</td>
+            <td className='td-type'>{item.currency}</td>
         </tr>
-        </>
             ))}
                 </tbody>
         </table>
         </>
     )
 }
+export default TransactionHistory;

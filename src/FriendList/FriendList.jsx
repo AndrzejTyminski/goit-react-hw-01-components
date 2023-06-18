@@ -1,12 +1,10 @@
-import friendlist from './friends.json'
 import "./Friendlist.css"
-
-export const FriendListItem = () => {
+const FriendListItem = ( {items} ) => {
     return (
     <ul style={{listStyle: 'none'}}>
-          {friendlist.map(({ avatar, name, isOnline, id, }) => (
+          {items.map(({ avatar, name, isOnline, id, }) => (
                 <li className='friend' key={id}> 
-                    {isOnline ? <span className='friend-led' style={{backgroundColor: 'red'}}></span> : <span className="friend-led" style={{backgroundColor: 'green'}}></span> }
+                    {isOnline ? <span className='friend-led' style={{backgroundColor: 'green'}}></span> : <span className="friend-led" style={{backgroundColor: 'red'}}></span> }
                     <img src={avatar} style={{width: 48}} alt="User avatar"></img>
                     <p className='friend-avatar'>{name}</p>
                 </li>
@@ -14,3 +12,4 @@ export const FriendListItem = () => {
     </ul>
     );
   }
+export default FriendListItem
