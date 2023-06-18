@@ -5,11 +5,9 @@ const Profile = ( {items})  =>
         <div className='profileCenter'>
             <div className='profile'>
                 <img className='profile-avatar'src={items.avatar} alt="User avatar"></img>
-                
                     <p className='profile-name'>{items.username}</p>
                     <p className='profile-text'>@{items.tag}</p>
                     <p className='profile-text profile-margin-bottom'>{items.location}</p>
-            
                 <ul className='profile-ul'>
                     <li className='profile-li'>
                         <span className='profile-span-first'>Followers</span>
@@ -28,5 +26,4 @@ const Profile = ( {items})  =>
         </div>
    </> 
 )}
-
 export default Profile

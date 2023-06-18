@@ -1,5 +1,4 @@
 import './Statistics.css'
-
 const Statistics = ( {items} ) => 
 {
       return(
@@ -17,6 +16,8 @@ const Statistics = ( {items} ) =>
     </section>
     </>
     )
+
+    // fukncja zmiany kolorow
 }
 function Hex() {
   return Math.round(Math.random() * 256)
@@ -30,5 +31,4 @@ const hex31 = Hex3();
 const col = {
   backgroundColor: hex31,
 };
-
   export default Statistics
