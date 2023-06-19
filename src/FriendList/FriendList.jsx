@@ -1,12 +1,13 @@
-import "./Friendlist.css"
+import css from "./Friendlist.module.css"
 const FriendListItem = ( {items} ) => {
+      console.log(css)
     return (
     <ul style={{listStyle: 'none'}}>
           {items.map(({ avatar, name, isOnline, id, }) => (
-                <li className='friend' key={id}> 
-                    {isOnline ? <span className='friend-led' style={{backgroundColor: 'green'}}></span> : <span className="friend-led" style={{backgroundColor: 'red'}}></span> }
+                <li className={css.friend} key={id}> 
+                    {isOnline ? <span className={css.friendLed} style={{backgroundColor: 'green'}}></span> : <span className="friend-led" style={{backgroundColor: 'red'}}></span> }
                     <img src={avatar} style={{width: 48}} alt="User avatar"></img>
-                    <p className='friend-avatar'>{name}</p>
+                    <p className={css.friendAvatar}>{name}</p>
                 </li>
           ))}
     </ul>

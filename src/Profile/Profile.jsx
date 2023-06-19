@@ -1,25 +1,25 @@
-import "./Profile.css"
+import css from "./Profile.module.css"
 const Profile = ( {items})  =>
 {return(
    <>
-        <div className='profileCenter'>
-            <div className='profile'>
-                <img className='profile-avatar'src={items.avatar} alt="User avatar"></img>
-                    <p className='profile-name'>{items.username}</p>
-                    <p className='profile-text'>@{items.tag}</p>
-                    <p className='profile-text profile-margin-bottom'>{items.location}</p>
-                <ul className='profile-ul'>
-                    <li className='profile-li'>
-                        <span className='profile-span-first'>Followers</span>
-                        <span className='profile-span-second'>{items.stats.followers}</span>
+        <div className={css.profileCenter}>
+            <div className={css.profile}>
+                <img className={css.profileAvatar} src={items.avatar} alt="User avatar"></img>
+                    <p className={css.profileName}>{items.username}</p>
+                    <p className={css.profileText}>@{items.tag}</p>
+                    <p className={'${css.profileMarginBottom} ${css.profileText}'}>{items.location}</p>
+                <ul className={css.profileUl}>
+                    <li className={css.profileLi}>
+                        <span className={css.profileSpanFirst}>Followers</span>
+                        <span className={css.profileSpanSecond}>{items.stats.followers}</span>
                     </li>
-                    <li className='profile-li'>
-                        <span className='profile-span-first'>Views</span>
-                        <span className='profile-span-second'>{items.stats.views}</span>
+                    <li className={css.profileLi}>
+                        <span className={css.profileSpanFirst}>Views</span>
+                        <span className={css.profileSpanSecond}>{items.stats.views}</span>
                     </li>
-                    <li className='profile-li'>
-                        <span className='profile-span-first'>Likes</span>
-                        <span className='profile-span-second'>{items.stats.likes}</span>
+                    <li className={css.profileLi}>
+                        <span className={css.profileSpanFirst}>Likes</span>
+                        <span className={css.profileSpanSecond}>{items.stats.likes}</span>
                     </li>
                 </ul> 
             </div>

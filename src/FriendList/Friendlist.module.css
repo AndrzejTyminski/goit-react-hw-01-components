@@ -11,7 +11,7 @@
 .friend:hover {
   box-shadow: 2px 4px 10px -1px rgba(66, 68, 90, 1);
 }
-.friend-led {
+.friendLed {
   border: 1px solid #040404;
   width: 10px;
   height: 10px;
@@ -19,6 +19,6 @@
   margin: 10px;
 }
 
-.friend-avatar {
+.friendAvatar {
   margin: 0 10px;
 }

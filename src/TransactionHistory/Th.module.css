@@ -1,4 +1,4 @@
-.transaction-history {
+.transactionHistory {
   border: 0px;
   box-shadow: 8px 8px 11px -9px rgba(66, 68, 90, 1);
 }
@@ -13,14 +13,14 @@ th {
   background-color: rgb(80, 178, 178);
 }
 
-.td-type {
+.tdType {
   width: 300px;
   text-align: center;
   color: #686868;
   border: 0;
 }
 
-tr:nth-child(even) {
+tr:nthChild(even) {
   background: #dfdfdf;
 }
 

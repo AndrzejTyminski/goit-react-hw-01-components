@@ -13,7 +13,7 @@
   padding: 0;
 }
 
-.statistic-li {
+.statisticLi {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,12 +22,12 @@
   height: 30px;
 }
 
-.statistic-ul {
+.statisticUl {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.statistic-wrapper {
+.statisticWrapper {
   padding: 10px 0;
 }

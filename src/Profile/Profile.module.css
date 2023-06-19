@@ -7,7 +7,6 @@
   background-color: #ffe;
   margin: 90px 0;
   padding-top: 45px;
-
   border: 1px solid #ccc;
 }
 
@@ -19,24 +18,30 @@
   background-color: #ccc;
 }
 
-.profile-avatar {
+.profileAvatar {
   width: 250px;
   border-radius: 50%;
   border: 1px solid #ccc;
 }
 
-.profile-name {
+.profileName {
   font-weight: 900;
   font-size: larger;
 }
 
-.profile-text {
+.profileText {
   margin: 5px;
   color: #aaa;
   font-size: larger;
 }
 
-.profile-ul {
+.profileMarginBottom {
+
+  margin-bottom: 30px;
+}
+
+
+.profileUl {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -45,7 +50,7 @@
   background-color: #eee;
 }
 
-.profile-li {
+.profileLi {
   border: 1px solid #ccc;
   width: 199px;
   height: 150px;
@@ -56,18 +61,16 @@
   justify-content: center;
 }
 
-.profile-margin-bottom {
-  margin-bottom: 30px;
-}
 
-.profile-span-first {
+.profileSpanFirst {
   font-size: large;
   font-weight: 500;
   color: #aaa;
   margin-bottom: 10px;
 }
 
-.profile-span-second {
+.profileSpanSecond {
   font-size: larger;
   font-weight: 900;
 }
+

@@ -1,13 +1,13 @@
-import './Statistics.css'
+import css from './Statistics.module.css'
 const Statistics = ( {items} ) => 
 {
       return(
     <>  
-    <section className='statistic'>
-      <h2 className='statistic-wrapper'>Upload stats</h2>
-       <ul className='statistic-ul'>  
+    <section className={css.statistic}>
+      <h2 className={css.statisticWrapper}>Upload stats</h2>
+       <ul className={css.statisticUl}>  
                 {items.map( item => (
-                  <li className='statistic-li' style={col} key={item.id}>
+                  <li className={css.statisticLi} style={col} key={item.id}>
                   <span>{item.label}</span>
                   <span>{item.percentage}%</span>
                   </li>
