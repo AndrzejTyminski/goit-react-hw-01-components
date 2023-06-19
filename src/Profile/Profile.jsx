@@ -7,7 +7,7 @@ const Profile = ( {items})  =>
                 <img className={css.profileAvatar} src={items.avatar} alt="User avatar"></img>
                     <p className={css.profileName}>{items.username}</p>
                     <p className={css.profileText}>@{items.tag}</p>
-                    <p className={'${css.profileMarginBottom} ${css.profileText}'}>{items.location}</p>
+                    <p className={css.profileText}>{items.location}</p>
                 <ul className={css.profileUl}>
                     <li className={css.profileLi}>
                         <span className={css.profileSpanFirst}>Followers</span>
