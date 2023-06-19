@@ -9,7 +9,6 @@
   padding-top: 45px;
   border: 1px solid #ccc;
 }
-
 .profileCenter {
   display: flex;
   align-items: center;
@@ -17,30 +16,24 @@
   flex-direction: column;
   background-color: #ccc;
 }
-
 .profileAvatar {
   width: 250px;
   border-radius: 50%;
   border: 1px solid #ccc;
 }
-
 .profileName {
   font-weight: 900;
   font-size: larger;
 }
-
 .profileText {
   margin: 5px;
   color: #aaa;
   font-size: larger;
 }
-
 .profileMarginBottom {
-
+  composes: profileText;
   margin-bottom: 30px;
 }
-
-
 .profileUl {
   list-style: none;
   display: flex;
@@ -49,7 +42,6 @@
   padding: 0;
   background-color: #eee;
 }
-
 .profileLi {
   border: 1px solid #ccc;
   width: 199px;
@@ -60,17 +52,13 @@
   align-items: center;
   justify-content: center;
 }
-
-
 .profileSpanFirst {
   font-size: large;
   font-weight: 500;
   color: #aaa;
   margin-bottom: 10px;
 }
-
 .profileSpanSecond {
   font-size: larger;
   font-weight: 900;
 }
-
