@@ -20,8 +20,8 @@ th {
   border: 0;
 }
 
-tr:nthChild(even) {
-  background: #dfdfdf;
+tr:nth-child(even) {
+  background: #a5cdb8;
 }
 
 tr {
